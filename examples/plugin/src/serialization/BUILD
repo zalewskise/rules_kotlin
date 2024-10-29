@@ -27,6 +27,15 @@ kt_jvm_library(
     name = "data",
     srcs = ["Data.kt"],
     deps = [
+        ":another_data",
+        ":kotlin_serialization",
+    ],
+)
+
+kt_jvm_library(
+    name = "another_data",
+    srcs = ["AnotherData.kt"],
+    deps = [
         ":kotlin_serialization",
     ],
 )
